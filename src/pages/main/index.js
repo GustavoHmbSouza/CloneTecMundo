@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { DiReact } from 'react-icons/di';
+import { IoIosSearch } from 'react-icons/io';
 import { Header, Main, Section, Footer } from './styles';
 
 export default class main extends Component {
@@ -14,10 +16,22 @@ export default class main extends Component {
             <>
                 <Header>
                     <header>
-                        <h1>Icone Tecmundo</h1>
-                        <h1>Botão de pesquisa</h1>
+                        <a href="#">
+                            <DiReact />
+                            <p>
+                                Tec<span>mundo</span>
+                            </p>
+                        </a>
+
+                        <div id="botaoPesquisar">
+                            <IoIosSearch />
+                            <input
+                                type="text"
+                                placeholder="O que você procura?"
+                            />
+                        </div>
                     </header>
-                    <nav>
+                    <nav id="segundoMenu">
                         <nav>
                             <ul>
                                 <li>Notícias</li>
@@ -30,7 +44,7 @@ export default class main extends Component {
                                 <li>Cupons de Desconto</li>
                             </ul>
 
-                            <li>Teste de Velocidade</li>
+                            <div>Teste de Velocidade</div>
                         </nav>
                     </nav>
                 </Header>
